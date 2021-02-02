@@ -19,7 +19,29 @@ export function MainLayout({ children, title = 'Next App' }) {
             <main>
                 {children}
             </main>
-            
+            <style jsx global>{`
+                // body {
+                //     margin: 0;
+                // }
+
+                nav {
+                    position: fixed;
+                    height: 60px;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    background-color: darkblue;
+                    display: flex;
+                    justify-content: space-around;
+                    align-content: center;
+                    align-items: center;
+                }
+
+                nav a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+            `}</style>
         </>
     )
 }
