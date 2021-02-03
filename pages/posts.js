@@ -11,6 +11,8 @@ export default function Posts() {
             const json = await response.json();
             setPosts(json);
         }
+
+        load();
     }, [])
     return (
         <MainLayout>
@@ -18,7 +20,7 @@ export default function Posts() {
                 <title>Posts Page | Next Course</title>
             </Head>
             <h1>Posts Page</h1>
-            <pre>{JSON.stringify(posts)}</pre>
+            <pre>{JSON.stringify(posts, null, 2)}</pre>
         </MainLayout>
     )
 }
