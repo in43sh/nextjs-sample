@@ -10,6 +10,7 @@
     "mock": "json-server -w db.json -p 4200 -d 450"
   },
   "dependencies": {
+    "isomorphic-unfetch": "^3.1.0",
     "json-server": "^0.16.3",
     "next": "10.0.5",
     "react": "17.0.1",
