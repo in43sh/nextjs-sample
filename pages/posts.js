@@ -24,3 +24,8 @@ export default function Posts() {
         </MainLayout>
     )
 }
+
+Posts.getInitialProps = async () => {
+    const response = fetch('http://localhost:4200/posts');
+    const json = await response.json();
+}
